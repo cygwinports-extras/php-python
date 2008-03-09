@@ -1,0 +1,84 @@
+php-python
+------------------------------------------
+This extension allows the Python interpreter to be embedded inside of 
+PHP, allowing for the instantiate and manipulation of Python objects 
+from within PHP.
+
+Runtime requirements:
+  cygwin-1.5.25-7
+  php-5.2.5-1
+  python-2.5.1-3
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.61-1
+  automake1.10-1.10-1
+  binutils-20060817-1
+  cygport-0.3.8-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  php-pear-5.2.5-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://pecl.php.net/package/python/
+
+Canonical download:
+  http://pecl.php.net/get/python
+
+-------------------------------------------
+
+Build instructions:
+  unpack php-python-0.8.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./php-python-0.8.0-X.cygport all
+
+This will create:
+  /usr/src/php-python-0.8.0-X-src.tar.bz2
+  /usr/src/php-python-0.8.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/php5/conf.d/python.ini
+  /usr/lib/php/20060613/python.dll
+  /usr/share/doc/php-python-0.8.0/CREDITS
+  /usr/share/pear/.registry/.channel.pecl.php.net/python.reg
+  /usr/share/pear/doc/python/CREDITS
+  /usr/share/pear/doc/python/EXPERIMENTAL
+  /usr/share/pear/doc/python/docs/TODO
+  /usr/share/pear/doc/python/examples/shell.php
+  /usr/share/pear/test/python/tests/TestModule.py
+  /usr/share/pear/test/python/tests/convert_to_php.phpt
+  /usr/share/pear/test/python/tests/foreach.phpt
+  /usr/share/pear/test/python/tests/object_count_elements.phpt
+  /usr/share/pear/test/python/tests/object_dimension_delete.phpt
+  /usr/share/pear/test/python/tests/object_dimension_exists.phpt
+  /usr/share/pear/test/python/tests/object_get_properties.phpt
+  /usr/share/pear/test/python/tests/object_property_delete.phpt
+  /usr/share/pear/test/python/tests/object_property_exists.phpt
+  /usr/share/pear/test/python/tests/object_read_dimension.phpt
+  /usr/share/pear/test/python/tests/object_read_property.phpt
+  /usr/share/pear/test/python/tests/object_write_dimension.phpt
+  /usr/share/pear/test/python/tests/object_write_property.phpt
+  /usr/share/pear/test/python/tests/php_var.phpt
+  /usr/share/pear/test/python/tests/php_version.phpt
+  /usr/share/pear/test/python/tests/python_call.phpt
+  /usr/share/pear/test/python/tests/python_eval.phpt
+  /usr/share/pear/test/python/tests/python_exec.phpt
+
+------------------
+
+Port Notes:
+
+----- version 0.8.0-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
