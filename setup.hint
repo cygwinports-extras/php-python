@@ -1,5 +1,5 @@
 category: PHP Python
-requires: cygwin php python
+requires: php python
 sdesc: "PHP embedded Python extension"
 ldesc: "This extension allows the Python interpreter to be embedded 
 inside of PHP, allowing for the instantiate and manipulation of Python 
